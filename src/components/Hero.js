@@ -31,7 +31,7 @@ const Heros = styled.div`
     font-weight: 900;
   }
   h1 {
-    font-size: 40px;
+    font-size: 70px;
     font-family: "Hind", sans-serif;
   }
 
