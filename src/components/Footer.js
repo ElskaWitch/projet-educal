@@ -19,10 +19,10 @@ export default function Footer() {
                 can customize lesson plans to best.
               </p>
             </div>
-            <div className="grid grid-cols-3">
-              <FaFacebookF className="text-[#fff] bg-[#2b4eff]" />
-              <FaTwitter />
-              <FaPinterestP />
+            <div className="flex  gap-3 pt-9">
+              <FaFacebookF className="text-[#f3f4f8] bg-[#2b4eff] rounded-md w-7 h-7 " />
+              <FaTwitter className="text-[#f3f4f8] bg-[#03a9f4] rounded-md w-7 h-7" />
+              <FaPinterestP className="text-[#f3f4f8] bg-[#ff3c4e] rounded-md w-7 h-7" />
             </div>
           </div>
           <div className="block2">
@@ -56,9 +56,16 @@ export default function Footer() {
             <div>
               <h3>Subscribe</h3>
               <div>
-                <input type="text" />
+                <button className="flex bg-[#2b4eff] text-[#f3f4f8] ">
+                  <input
+                    type="text"
+                    placeholder="Your email address"
+                    className="p-4"
+                  />
+                  fleche
+                </button>
               </div>
-              <div>
+              <div className="pt-5">
                 <p>Get the latest news and updates right at your inbox.</p>
               </div>
             </div>
@@ -67,8 +74,8 @@ export default function Footer() {
         <hr />
         <div className="text-center">
           <p>
-            @ 2022 Educal, All Right Reserved. Design By{" "}
-            <span className="text-[#2b4eff] ">Theme Pure</span>
+            @ 2022 Educal, All Right Reserved. Design By
+            <span className="text-[#2b4eff] "> Theme Pure</span>
           </p>
         </div>
       </div>

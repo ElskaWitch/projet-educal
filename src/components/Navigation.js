@@ -35,20 +35,20 @@ export default function Navigation() {
   return (
     <header className="">
       <NavContainer>
-        <div className="barnav">
+        <div className="barnav ">
           <div className="logo">
             <Link to="/">
               <img src="logo.png" alt="logo" />
             </Link>
           </div>
-          <div className="nav-item flex ">
+          <div className="nav-item flex items-center ">
             <ul>
               {items.map((item) => (
                 <Item slug={item.slug} key={item.id} name={item.name} />
               ))}
             </ul>
             <div className="bg-[#2b4eff] text-[#fff] rounded-md px-5 ">
-              <button>Sign up</button>
+              <button className="p-2 ">Sign up</button>
             </div>
           </div>
         </div>
