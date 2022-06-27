@@ -73,6 +73,7 @@ const NavContainer = styled.nav`
     li {
       list-style: none;
       padding-right: 20px;
+      font-weight: 600;
     }
   }
 `;
