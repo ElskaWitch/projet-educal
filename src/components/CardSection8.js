@@ -19,7 +19,9 @@ export default function CardSection8({
       <div className="min-h-[500px]  rounded-md shadow-2xl bg-[#fff] ">
         <img className="pb-2 rounded-md" src={img} alt={alt} />
         <div className="p-5">
-          <p className={`${bgcolor} ${color} pb-3 font-semibold `}>{cours}</p>
+          <div className="pr-64 pb-4 text-center ">
+            <p className={`${bgcolor} ${color}  font-semibold `}>{cours}</p>
+          </div>
           <p className=" font-bold pb-7">{titre}</p>
           <div className="flex text-[#6d6e75] gap-14 items-center">
             <div className="flex gap-4">

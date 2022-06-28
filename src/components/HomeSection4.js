@@ -1,9 +1,13 @@
 import React from "react";
+import CardSection4 from "./CardSection4";
 
 export default function HomeSection4() {
+  let bgImage1 = "bg-[url('../public/what-1.jpg')]";
+  let bgImage2 = "bg-[url('../public/what-2.jpg')]";
+
   return (
-    <div className="block pt-40 pb-40">
-      <div className="text-center">
+    <div className="block pt-40">
+      <div className="text-center ">
         <h2>What Is Skilline ?</h2>
         <img src="yellow-bg.png" alt="" />
         <p className="text-[#6d6e75]">
@@ -13,9 +17,9 @@ export default function HomeSection4() {
           good.
         </p>
       </div>
-      <div className="flex gap-5 w-96 pt-10 ">
-        <img src="what-1.jpg" alt="what1" />
-        <img src="what-2.jpg" alt="what2" />
+      <div className="flex gap-5 pb-40 pt-14 relative left-40">
+        <CardSection4 img={bgImage1} text="Mostly Online Learning" />
+        <CardSection4 img={bgImage2} text="Become an Instructor" />
       </div>
     </div>
   );
