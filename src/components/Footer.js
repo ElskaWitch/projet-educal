@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
+import { WiDirectionRight } from "react-icons/wi";
 
 export default function Footer() {
   return (
@@ -56,13 +57,13 @@ export default function Footer() {
             <div>
               <h3>Subscribe</h3>
               <div>
-                <button className="flex bg-[#2b4eff] text-[#f3f4f8] ">
+                <button className="flex bg-[#2b4eff] text-[#f3f4f8] items-center">
                   <input
                     type="text"
                     placeholder="Your email address"
                     className="p-4"
                   />
-                  fleche
+                  <WiDirectionRight className="text-5xl " />
                 </button>
               </div>
               <div className="pt-5">

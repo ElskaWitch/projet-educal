@@ -9,7 +9,9 @@ export default function Hero() {
           <h1>Launch your Own online learning Platform</h1>
           <img src="yellow-bg.png" alt="ligne jaune" className="jaune" />
           <h2>unlimited access to all 60+ instructors.</h2>
-          <p>2 passes (with acces to all classes) for $240</p>
+          <p className="text-[#53545b]">
+            2 passes (with acces to all classes) for $240
+          </p>
         </div>
         <div className="">
           <img src="hero.png" alt="étudiante" className="etudiante" />

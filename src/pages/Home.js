@@ -1,6 +1,13 @@
 import React from "react";
-import Card from "../components/Card";
 import styled from "styled-components";
+import HomeSection1 from "../components/HomeSection1";
+import HomeSection2 from "../components/HomeSection2";
+import HomeSection3 from "../components/HomeSection3";
+import HomeSection4 from "../components/HomeSection4";
+import HomeSection5 from "../components/HomeSection5";
+import HomeSection6 from "../components/HomeSection6";
+import HomeSection7 from "../components/HomeSection7";
+import HomeSection8 from "../components/HomeSection8";
 
 export default function Home() {
   const datas = [
@@ -39,145 +46,191 @@ export default function Home() {
     },
   ];
 
+  const dattas = [
+    {
+      sujet: "Art & Design",
+      src: "course-1.jpg",
+      alt: "etudiants",
+      lesson: "43 Lesson",
+      title: "Become a product Manager learn the skills & job.",
+      portrait: "teacher-1.jpg",
+      person: "jim.S",
+      name: "Jim Séchen",
+      price: "Free",
+      promo: "",
+      bgcolors: "bg-[#b128ff]",
+      color: "text-[#b128ff]",
+      id: 5,
+    },
+
+    {
+      sujet: "Mechanical",
+      src: "course-2.jpg",
+      alt: "cours",
+      lesson: "72 Lesson",
+      title: "Fundamentals of music theory Learn new",
+      portrait: "teacher-2.jpg",
+      person: "Barry.T",
+      name: "Barry Tone",
+      price: "$32.00",
+      promo: "$68.00",
+      bgcolors: "bg-[#03a9f4]",
+      color: "text-[#03a9f4]",
+      id: 6,
+    },
+    {
+      sujet: "Development",
+      src: "course-3.jpg",
+      alt: "classe",
+      lesson: "14 Lesson",
+      title: "Strategy law and organization Foundation",
+      portrait: "teacher-3.jpg",
+      person: "Elon.G",
+      name: "Elon Gated",
+      price: "$46.00",
+      promo: "$68.00",
+      bgcolors: "bg-[#30a820]",
+      color: "text-[#30a820]",
+      id: 7,
+    },
+    {
+      sujet: "UX Design",
+      src: "course-6.jpg",
+      alt: "ordinateur",
+      lesson: "13 Lesson",
+      title: "Creative writing through Storytelling",
+      portrait: "teacher-6.jpg",
+      person: "Shahnewaz.S",
+      name: "Shahnewaz Sakil",
+      price: "$46.00",
+      promo: "$72.00",
+      bgcolors: "bg-[#f2277e]",
+      color: "text-[#f2277e]",
+      id: 8,
+    },
+    {
+      sujet: "Marketing",
+      src: "course-4.jpg",
+      alt: "dehors",
+      lesson: "22 Lesson",
+      title: "The buisness Intelligence analyst Course 2022",
+      portrait: "teacher-4.jpg",
+      person: "Eleanor.F",
+      name: "Eleanor Fant",
+      price: "$62.00",
+      promo: "$97.00",
+      bgcolors: "bg-[#3b60ff]",
+      color: "text-[#3b60ff]",
+      id: 9,
+    },
+    {
+      sujet: "Audio & Music",
+      src: "course-5.jpg",
+      alt: "tableau",
+      lesson: "18 Lesson",
+      title: "Build your media and Public presence",
+      portrait: "teacher-5.jpg",
+      person: "Pelican.S",
+      name: "Pelican Steve",
+      price: "$62.00",
+      promo: "$97.00",
+      bgcolors: "bg-[#ff7921]",
+      color: "text-[#ff7921]",
+      id: 10,
+    },
+  ];
+
+  const datos = [
+    {
+      img: "svgexport-11.png",
+      alt: "logo",
+      number: "55,267",
+      text: "Students Enrolled",
+      id: 11,
+    },
+    {
+      img: "svgexport-12.png",
+      alt: "logo",
+      number: "397",
+      text: "Total Courses",
+      id: 12,
+    },
+    {
+      img: "svgexport-13.png",
+      alt: "logo",
+      number: "3,853",
+      text: "Online Learners",
+      id: 13,
+    },
+    {
+      img: "svgexport-14.png",
+      alt: "logo",
+      number: "32k",
+      text: "Foreign Followers",
+      id: 14,
+    },
+  ];
+
+  const dattos = [
+    {
+      img: "blog-1.jpg",
+      alt: "etudiant",
+      cours: "Art & Design",
+      titre: "The Challenge Of Global Learning In Public Education",
+      teacher: "teacher-1.jpg",
+      altname: "Jim.S",
+      prenom: "Jim Séchen",
+      date: "July 02, 2022",
+      bgcolor: "bg-[#a0dcf794]",
+      color: "text-[#03a9f4]",
+      id: 15,
+    },
+    {
+      img: "blog-2.jpg",
+      alt: "etudiant",
+      cours: "Marketing",
+      titre: "Exactly How Technology Can Make Reading Better",
+      teacher: "teacher-2.jpg",
+      altname: "Barry.T",
+      prenom: "Barry Tone",
+      date: "July 02, 2022",
+      bgcolor: "bg-[#e5d3ffc4]",
+      color: "text-[#8330fe]",
+      id: 16,
+    },
+    {
+      img: "blog-3.jpg",
+      alt: "etudiant",
+      cours: "UX Design",
+      titre: "New Chicago school budget relies on state pension",
+      teacher: "teacher-3.jpg",
+      altname: "Barry.T",
+      prenom: "Barry Tone",
+      date: "July 02, 2022",
+      bgcolor: "bg-[#ffcde3c2]",
+      color: "text-[#f2277e]",
+      id: 17,
+    },
+  ];
+
   return (
     <Homes>
       {/* section 1 */}
-      <div className="block">
-        <div className="text-center pt-40 pb-20">
-          <h2>Why An Scholercity Out Of The Ordinary</h2>
-          <img src="yellow-bg.png" alt="ligne jaune" className="jaune" />
-          <p>
-            You don't have to struggle alone, you've got our assistance and
-            help.
-          </p>
-        </div>
-        <div className="flex gap-5 pb-40 ">
-          {datas.map((data) => {
-            return (
-              <Card
-                key={data.id}
-                title={data.title}
-                description={data.description}
-                src={data.src}
-                alt={data.alt}
-                bgcolor={data.bgcolor}
-              />
-            );
-          })}
-        </div>
-      </div>
+      <HomeSection1 datas={datas} />
       {/* section 2 */}
-      <div className="block flex px-40 pb-40">
-        <div>
-          <img src="about.jpg" alt="about" />
-        </div>
-        <div className="pl-28">
-          <h2>Achieve Your Goals With Educal</h2>
-          <img src="yellow-bg.png" alt="" />
-          <p>
-            Lost the plot bobby susch a fibber bleeding bits and bobs don't get
-            shirty with me bugger all mate chinwag super pukka william barney,
-            horse play buggered.
-          </p>
-          <ul className="py-5">
-            <li>Upskill your organization</li>
-            <li>Access more then 100K online courses</li>
-            <li>Learn the latest skills</li>
-          </ul>
-          <button className="button">Apply now</button>
-        </div>
-      </div>
+      <HomeSection2 />
       {/* section 3 */}
-      <div className="bg-[#edeef3]">
-        <div className="block py-40">
-          <div className="flex space-x-60 items-end">
-            <div>
-              <h2>Find The Right Online Course For You</h2>
-              <img src="yellow-bg.png" alt="" />
-              <p>
-                You don't have to struggle alone, you've got our assistance and
-                help.
-              </p>
-            </div>
-            <div className="">
-              <ul className="flex ">
-                <li>See all</li>
-                <li>Trending</li>
-                <li>Popularity</li>
-                <li>Featured</li>
-                <li>Art & Design</li>
-              </ul>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-5 pt-10 ">
-            {datas.map((data) => {
-              return (
-                <Card
-                  key={data.id}
-                  title={data.title}
-                  description={data.description}
-                  src={data.src}
-                  alt={data.alt}
-                  bgcolor={data.bgcolor}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      <HomeSection3 dattas={dattas} />
       {/* section 4 */}
-      <div className="block pt-40 pb-40">
-        <div className="text-center">
-          <h2>What Is Skilline ?</h2>
-          <img src="yellow-bg.png" alt="" />
-          <p>
-            Sloshed faff about old mucker blattant bubble and squeak hanky panky
-            some dodgy chav bevvy arse chimney pot I, ruddy plastered buggered
-            smashing blow off I'm telling up the kyver he legged it bleeder
-            jolly good.
-          </p>
-        </div>
-        <div className="flex gap-5 w-96 pt-10 ">
-          <img src="what-1.jpg" alt="what1" />
-          <img src="what-2.jpg" alt="what2" />
-        </div>
-      </div>
+      <HomeSection4 />
       {/* section 5 */}
-      <div className="block pb-40 flex">
-        <div>
-          <p className="text-[#2b4eff]">Why Choses Me</p>
-          <h2>Tools For Teachers And Learners</h2>
-          <img src="yellow-bg.png" alt="" />
-          <p>
-            Oxford chimney pot Eaton faff about blower blatant brilliant, bubble
-            and squeak he legged it Charles bonnet arse at public school
-            bamboozled.
-          </p>
-          <div className="flex gap-5 pt-10">
-            <button className="btn">Join for free</button>
-            <button>Learn More</button>
-          </div>
-        </div>
-        <div>
-          <img src="why.png" alt="why" />
-        </div>
-      </div>
+      <HomeSection5 />
       {/* section 6 */}
-      <div className="block pb-40 ">
-        <div className="text-center">
-          <h2>We Are Proud</h2>
-          <img src="yellow-bg.png" alt="" />
-          <p>
-            You don't have to struggle alone, you've got our assistance and
-            help.
-          </p>
-        </div>
-        <div>
-          <img src="svgexport-11.png" alt="" />
-          <p className="font-bold text-lg">55,267</p>
-          <p>Students Enrolled</p>
-        </div>
-      </div>
+      <HomeSection6 datos={datos} />
+      {/* section 7 */}
+      <HomeSection7 />
+      {/* section 8 */}
+      <HomeSection8 dattos={dattos} />
     </Homes>
   );
 }
