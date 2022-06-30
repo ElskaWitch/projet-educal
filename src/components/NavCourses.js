@@ -41,7 +41,7 @@ export default function NavCourses() {
               <img src="logo-2.png" alt="logo" />
             </Link>
           </div>
-          <div className="nav-item flex items-center ">
+          <div className="nav-item md:flex items-center ">
             <ul>
               {items.map((item) => (
                 <Item slug={item.slug} key={item.id} name={item.name} />
