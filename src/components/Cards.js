@@ -19,14 +19,14 @@ export default function CardsCours({
 }) {
   return (
     <CardContainers>
-      <div className="min-h-[500px]  rounded-md shadow-2xl bg-[#fff]">
+      <div className="md:min-h-[500px]  rounded-md shadow-2xl bg-[#fff]">
         <div className="sujet">
           <p className={`${bgcolors} text-[#f3f4f8] rounded-lg p-1 `}>
             {sujet}
           </p>
         </div>
         <img className="img pb-9 rounded-t-md" src={src} alt={alt} />
-        <div className="contenu">
+        <div className="contenux md:px-[35px]">
           <div className="flex items-center gap-2 text-[#6d6e75] pb-2">
             <FiBook />
             <p>{lesson}</p>
@@ -54,10 +54,10 @@ export default function CardsCours({
 }
 
 const CardContainers = styled.main`
-  .contenu {
+  /* .contenu {
     padding-left: 35px;
     padding-right: 35px;
-  }
+  } */
   .sujet {
     position: absolute;
     z-index: 50;

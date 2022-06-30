@@ -6,7 +6,7 @@ export default function HomeSection4() {
   let bgImage2 = "bg-[url('../public/what-2.jpg')]";
 
   return (
-    <div className="block pt-40">
+    <div className="blockx md:px-[150px] pt-40">
       <div className="text-center ">
         <h2>What Is Skilline ?</h2>
         <img src="yellow-bg.png" alt="" />
@@ -17,7 +17,7 @@ export default function HomeSection4() {
           good.
         </p>
       </div>
-      <div className="flex gap-5 pb-40 pt-14 relative left-40">
+      <div className="md:flex gap-5 pb-40 pt-14 relative md:left-40">
         <CardSection4 img={bgImage1} text="Mostly Online Learning" />
         <CardSection4 img={bgImage2} text="Become an Instructor" />
       </div>

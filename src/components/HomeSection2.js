@@ -2,11 +2,11 @@ import React from "react";
 
 export default function HomeSection2() {
   return (
-    <div className="block flex px-40 pb-40">
+    <div className="blockf md:flex px-10 md:px-40 pb-40">
       <div>
         <img src="about.jpg" alt="about" />
       </div>
-      <div className="pl-28">
+      <div className="md:pl-28">
         <h2>Achieve Your Goals With Educal</h2>
         <img src="yellow-bg.png" alt="" />
         <p className="text-[#6d6e75]">

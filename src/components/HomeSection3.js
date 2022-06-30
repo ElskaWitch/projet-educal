@@ -4,8 +4,8 @@ import CardsCours from "./Cards";
 export default function HomeSection3({ dattas }) {
   return (
     <div className="bg-[#edeef3]">
-      <div className="block py-40">
-        <div className="flex space-x-60 items-end">
+      <div className="block md:py-40">
+        <div className="md:flex md:space-x-60 items-end">
           <div>
             <h2>Find The Right Online Course For You</h2>
             <img src="yellow-bg.png" alt="" />
@@ -15,7 +15,7 @@ export default function HomeSection3({ dattas }) {
             </p>
           </div>
           <div className="">
-            <ul className="flex ">
+            <ul className="md:flex ">
               <li>See all</li>
               <li>Trending</li>
               <li>Popularity</li>
@@ -24,7 +24,7 @@ export default function HomeSection3({ dattas }) {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-5 pt-10 ">
+        <div className="grid md:grid-cols-3 gap-5 pt-10 ">
           {dattas.map((datta) => {
             return (
               <CardsCours

@@ -254,8 +254,8 @@ const Homes = styled.main`
   }
 
   .block {
-    padding-left: 150px;
-    padding-right: 150px;
+    /* padding-left: 150px;
+    padding-right: 150px; */
   }
 
   button {

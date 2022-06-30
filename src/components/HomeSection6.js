@@ -3,7 +3,7 @@ import CardSection6 from "./CardSection6";
 
 export default function HomeSection6({ datos }) {
   return (
-    <div className="block  ">
+    <div className="blockx md:px-[150px]  ">
       <div className="text-center">
         <h2>We Are Proud</h2>
         <img src="yellow-bg.png" alt="" />
@@ -12,7 +12,7 @@ export default function HomeSection6({ datos }) {
         </p>
         <div />
       </div>
-      <div className="flex gap-5  ">
+      <div className="md:flex gap-5  ">
         {datos.map((dato) => {
           return (
             <CardSection6

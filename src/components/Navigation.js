@@ -35,14 +35,14 @@ export default function Navigation() {
   return (
     <header className="">
       <NavContainer>
-        <div className="barnav ">
+        <div className="barnavs md:flex md:justify-center md:items-center bg-[#b8dde3] md:px-[150px] md:p-[20px] ">
           <div className="logo">
             <Link to="/">
               <img src="logo.png" alt="logo" />
             </Link>
           </div>
-          <div className="nav-item flex items-center ">
-            <ul>
+          <div className="nav-item  md:flex md:items-center ">
+            <ul className="md:flex">
               {items.map((item) => (
                 <Item slug={item.slug} key={item.id} name={item.name} />
               ))}
@@ -69,7 +69,7 @@ const NavContainer = styled.nav`
   }
 
   ul {
-    display: flex;
+    /* display: flex; */
     li {
       list-style: none;
       padding-right: 20px;

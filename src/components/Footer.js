@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <WrapperFooter>
       <div className="bg-[#edeef3] ">
-        <div className="allblock  flex">
+        <div className="allblock  md:flex">
           <div className="block1">
             <div>
               <img src="logo.png" alt="logo" />
@@ -20,7 +20,7 @@ export default function Footer() {
                 can customize lesson plans to best.
               </p>
             </div>
-            <div className="flex  gap-3 pt-9">
+            <div className="md:flex  gap-3 pt-9">
               <FaFacebookF className="text-[#f3f4f8] bg-[#2b4eff] rounded-md w-7 h-7 " />
               <FaTwitter className="text-[#f3f4f8] bg-[#03a9f4] rounded-md w-7 h-7" />
               <FaPinterestP className="text-[#f3f4f8] bg-[#ff3c4e] rounded-md w-7 h-7" />

@@ -11,7 +11,7 @@ export default function HomeSection8({ dattos }) {
           You don't have to struggle alone, you've got our assistance and help.
         </p>
       </div>
-      <div className="flex gap-5 pb-40 ">
+      <div className="md:flex gap-5 pb-40 ">
         {dattos.map((datto) => {
           return (
             <CardSection8

@@ -4,8 +4,8 @@ import styled from "styled-components";
 export default function Hero() {
   return (
     <Heros>
-      <div className="grid grid-cols-2">
-        <div className="texthero">
+      <div className="grid md:grid-cols-2">
+        <div className="textheros md:pl-[150px]">
           <h1>Launch your Own online learning Platform</h1>
           <img src="yellow-bg.png" alt="ligne jaune" className="jaune" />
           <h2>unlimited access to all 60+ instructors.</h2>
@@ -14,11 +14,15 @@ export default function Hero() {
           </p>
         </div>
         <div className="">
-          <img src="hero.png" alt="étudiante" className="etudiante" />
+          <img
+            src="hero.png"
+            alt="étudiante"
+            className="etudiantex md:relative md:z-50"
+          />
           <img
             src="hero-shape-purple.png"
             alt="tache purple"
-            className="purple"
+            className="purplex md:absolute md:top-[355px] md:z-10"
           />
         </div>
       </div>
