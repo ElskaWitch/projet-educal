@@ -23,13 +23,15 @@ export default function CardSection8({
             <p className={`${bgcolor} ${color}  font-semibold `}>{cours}</p>
           </div>
           <p className=" font-bold pb-7">{titre}</p>
-          <div className="flex text-[#6d6e75] gap-14 items-center">
+          <div className="flex text-[#6d6e75] justify-between items-center">
             <div className="flex gap-4">
               <img className="rounded-2xl" src={teacher} alt={altname} />
               <p>{prenom}</p>
             </div>
-            <BiTimeFive className="" />
-            <p>{date}</p>
+            <div className="flex items-center gap-2">
+              <BiTimeFive className="" />
+              <p>{date}</p>
+            </div>
           </div>
         </div>
       </div>

@@ -5,14 +5,14 @@ import { FaTwitter } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 import { WiDirectionRight } from "react-icons/wi";
 
-export default function Footer() {
+export default function FooterCourses() {
   return (
     <WrapperFooter>
-      <div className="bg-[#edeef3] ">
+      <div className="bg-[#0e1133] ">
         <div className="allblock  flex">
           <div className="block1">
             <div>
-              <img src="logo.png" alt="logo" />
+              <img src="logo-2.png" alt="logo" />
             </div>
             <div>
               <p>
@@ -76,7 +76,7 @@ export default function Footer() {
         <div className="text-center">
           <p>
             @ 2022 Educal, All Right Reserved. Design By
-            <span className="text-[#2b4eff] "> Theme Pure</span>
+            <span className="text-[#fff] "> Theme Pure</span>
           </p>
         </div>
       </div>
@@ -106,6 +106,10 @@ const WrapperFooter = styled.footer`
   h3 {
     font-weight: 700;
     padding-bottom: 25px;
+    color: #fff;
+  }
+  p {
+    color: #6d6e75;
   }
 
   .block1 p {

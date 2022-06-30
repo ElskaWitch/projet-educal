@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Navigation from "../components/Navigation";
+import Hero from "../components/Hero";
 import HomeSection1 from "../components/HomeSection1";
 import HomeSection2 from "../components/HomeSection2";
 import HomeSection3 from "../components/HomeSection3";
@@ -8,6 +10,7 @@ import HomeSection5 from "../components/HomeSection5";
 import HomeSection6 from "../components/HomeSection6";
 import HomeSection7 from "../components/HomeSection7";
 import HomeSection8 from "../components/HomeSection8";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const datas = [
@@ -215,6 +218,8 @@ export default function Home() {
 
   return (
     <Homes>
+      <Navigation />
+      <Hero />
       {/* section 1 */}
       <HomeSection1 datas={datas} />
       {/* section 2 */}
@@ -231,6 +236,7 @@ export default function Home() {
       <HomeSection7 />
       {/* section 8 */}
       <HomeSection8 dattos={dattos} />
+      <Footer />
     </Homes>
   );
 }
